@@ -1,67 +1,40 @@
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-        user-select: none;
-    }
-    #logo_img{
-        width: 14%;
-        margin-left: 20px;
-        margin-top: 3px
-    }
-    #header_login{
-        width: 86%px;
-        float: right;
-        text-align: right;
-        padding-top: 27px;
-        padding-right: 39px;
-        margin: 0  auto;
-    }
-    #header_login a{
-        text-decoration: none;
-        margin-bottom: 23px;
-        padding: 7px 17px;
-        background-color: #e50914;
-        color: white;
-        font-weight: 650;
-        border-radius: 5px;
-    }
-    .our-story-card-title{
-        font-size: 3.0rem;
-        text-align: center;
-        color: white;
-    }
-    .our-story-card-subtitle{
-        font-size: 2.0rem;
-        text-align: center;
-        color: white;
-        margin: 16px 155px;
-        font-weight: 400;
-    }
-    .aridai{
-        text-align: center;
-    }
-    .email-form-title{
-        color: white;
-        padding-bottom: 20px;
-        font-weight: 400;
-        font-size: 20px;
-    }
-    #id_email_hero_fuji{
-        min-width: 450px;
-        min-height: 60px;
-        padding-left: 9px;
-        font-size: 20px;
-    }
-    #btn_red{
-        width: 214.06px;
-        height: 60px;
-        text-decoration: none;
-        background-color: #e50914;
-        color: white;
-        text-align: center;
-        margin-bottom: 31px;
-        border: solid 0px ;
-        font-size: 20px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png">
+    <link rel="stylesheet" href="../bolum1/css/netflix.css">
+</head>
+
+<body style="background-image:url(../bolum1/Images/Dardevil.jpg); background-repeat: no-repeat;background-position: top center; background-size:cover ;">
+    <header class="logo">
+        <img src="../bolum1/Images/Netflix_Logo_PMS.png" alt=""  id="logo_img">
+            <nav id="header_login">
+                <select name="" id="selector">
+                    <option value="01" id="select_1">English</option>
+                    <option value="02" id="select_1">Türkçe</option>
+                </select>
+                <a href="https://www.netflix.com/tr/login">Sign In</a>        
+            </nav>
+    </header>
+    
+    <main style="margin-top: 120px;">
+        <div class="our-story-card-text">
+            <h1 class="our-story-card-title">Unlimited movies, TV<br> shows, and more.</h1><br>
+            <h2 class="our-story-card-subtitle">Watch anywhere. Cancel anytime.</h2><br>
+            <div class="aridai">
+                <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+                <form action="">
+                    <input type="email" name="" id="id_email_hero_fuji" placeholder="Email Adress">
+                        <button type="submit" id="btn_red">
+                            <span>Get Started  ></span>
+                        </button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
