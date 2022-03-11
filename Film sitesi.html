@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://icons.iconarchive.com/icons/designbolts/free-multimedia/16/Film-icon.png">
+    <title>Movieapp</title>
+    <link rel="stylesheet" href="../brrr/wbs.css">
+    <style>
+        *{
+    translate: no;
+    padding: 0px;
+    margin:  0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#head_er{
+    background-color: #FC997C;
+    padding: 8px 16px;
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left:28px;
+}
+.header_logo{
+    font-family: Arial, Helvetica, sans-serif;text-decoration:none;
+    color: white;
+}
+.nav_nor{
+    text-align: right;
+    width: calc(100% - 81px);
+    display: inline-block;
+}
+.nav_ul{
+    margin-left: 12px;
+}
+.nav_li{
+    display: inline-block;
+    list-style-type: none;
+}
+.nav_li a{
+    
+    text-decoration: none;
+    margin-right:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 100;
+}
+.ari{
+    padding: 8px 14px;
+    background-color: royalblue;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 400;
+    border: solid 2px rosybrown;
+}
+.ari:hover{
+    transition-duration: 0.6s;
+    background-color: white;
+    color: royalblue;
+    
+}
+.showcase{
+    background:linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)), url(../brrr/bg.jpeg);
+    height: 80vh;
+    width:   100%;
+    margin-bottom: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#content{
+    background-color: rgba(46, 76, 109, 0.3);
+    width:60%;
+    padding:20px;
+    color:white;
+    font-size:30px;
+    border-radius:10px;
+    font-family: 'Lato',sans-serif;
+    position: relative;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+}
+.how-it-works{
+    text-align: center;
+    
+}
+.rows_title{
+    font-family: Arial, Helvetica, sans-serif;color: #3e4555;
+    margin-bottom: 30px;
+}
+body{
+    font-family: 'Lato',sans-serif;
+}
+.rows_p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon_box{
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    width: 30%;
+    display: inline-block;
+}
+        
+.cols_2 {
+    height: 350px;
+    width: calc(50% - 2px);
+    display: inline-block;
+}
+.features__left{
+    background-size: cover;
+    background-position: top center;
+    background-image: url(../brrr/Dardevil.jpg);
+}
+.features__right{
+    padding: 40px;
+    vertical-align: top;
+    background-color: white;
+}
+#informatik{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 12px;
+    font-family: 'Lato',sans-serif;
+    border-radius: 4px;
+}
+#informatik:hover{
+    color: black;
+    background-color: white;
+    border: solid 2px black;
+    transition-duration: .3s;
+}
+#title_1{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'lato',sans-serif;
+}
+#plants{
+    width: 1000px;
+    padding-left: 12px;
+    margin-top: 12px;
+    text-align: center;
+    padding-right: 12px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+#plants li{
+    list-style-type: none;
+}
+#plants_1{
+    font-family: 'lato',sans-serif;width: 32.5%;background-color:#edf5f7;
+    float: left;padding:25px 10px;
+    box-shadow: 0px 7px 29px 0px rgb(100 100 111 / 20%);
+    border-radius: 5px;    
+    transition: box-shadow .6s;
+    padding-right: 12px;
+    margin-right: 8px;
+}
+
+#plants_2{
+    font-family: 'lato',sans-serif;width: 32.5%;background-color: #396EB0!important;
+    float: left;padding:25px 10px;
+    box-shadow: 0px 7px 29px 0px rgb(100 100 111 / 20%);
+    border-radius: 5px;    
+    transition: box-shadow .6s;padding-right: 12px;
+    margin-right: 8px;top: -20px;position: relative;
+}
+
+#plants_3{
+    font-family: 'lato',sans-serif;width: 32.5%;background-color:#edf5f7;
+    float: left;padding:25px 10px;
+    box-shadow: 0px 7px 29px 0px rgb(100 100 111 / 20%);
+    border-radius: 5px;     
+    transition: box-shadow .6s;padding-right: 12px;
+}
+
+#buton{
+    background-color:#FC997C;
+    border: solid 2px #FC997C;
+    padding: 7px 17px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    margin-top: 7px;
+}
+#buton:hover{
+    border: solid 2px #FC997C;
+    color: #FC997C;
+    background: white;
+    transition-duration: .6s;
+}
+#stick a{
+    color: #FC997C;
+    font-size: 45px;
+    position:fixed;
+    right:10px; bottom:10px;
+}
+#categories{
+    background:linear-gradient(rgba(210,43,43),rgba(224,17,95));width: 100%;
+    height: auto;
+    text-align: center;
+}
+.cat_1{
+    padding: 50px;
+}   
+#colon_3{
+    float:left;
+    width: 33%;
+}
+.cart_1{
+    width: 32.7%;
+    float: left;
+    background-color: yellowgreen;
+    box-shadow: 10px 10px 40px rgb(52 58 64 / 10%);
+    border-radius:0px;
+}
+.cart_2{
+    width: 32.7%;
+    float: left;
+    background-color: yellow;
+    box-shadow: 10px 10px 40px rgb(52 58 64 / 10%);
+    border-radius:0px;margin-right: 8px;margin-left: 8px;
+}
+.cart_3{
+    width: 32.7%;
+    float: left;
+    background-color: yellowgreen;
+    border-radius:0px;
+    box-shadow: 10px 10px 40px rgb(52 58 64 / 10%);
+}
+#img_cart_1{
+    width: 299px;
+    height:444px;
+    padding-right: 6.23px;
+}
+#row{
+    padding: 40px;
+}
+#plants{
+    width: 1000px;
+    padding-right: 12px;
+}
+
+.cart_1:hover{
+    transform:translateY(-20px);
+    transition-duration: .2s;
+}
+.cart_2:hover{
+    transform:translateY(-20px);
+    transition-duration: .2s;
+}
+.cart_3:hover{
+    transform:translateY(-20px);
+    transition-duration: .2s;
+}
+footer{
+    background-color:#3e4555;
+    height: auto;
+}
+#lin{
+    padding: 8px 16px;
+}
+.linko{
+    text-decoration: none;
+    color: #FC997C;
+    margin-left: 12px;
+    font-size: 20px;
+}
+#icon_pack{
+    float:right;
+    margin-right: 12px;
+}
+#icon_pack_1{
+    margin-right: 12px;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <header id="head_er" style="position: sticky; top: 0;">
+        <a href="#" class="header_logo">MovieApp</a>
+        <nav class="nav_nor">
+            <ul class="nav_ul">
+                <li class="nav_li">
+                    <a href="#">• Filmler</a>
+                </li>
+                <li class="nav_li">
+                    <a href="#">• Diziler</a>
+                </li>
+                <li class="nav_li">
+                    <a href="../brrr/Register.html"class="ari">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="showcase">
+            <div id="content">
+                <h2>Welcome</h2><br>
+                <h3>Millions of movies, TV shows and people to discover. Explore now.
+                </h3>
+            </div>
+        </div>
+        <div class="how-it-works">
+            <div id="rows">
+                <h2 class="rows_title">
+                    How it works?
+                </h2>
+            </div>
+            <div id="rows">
+                <p class="rows_p">We will show you step by step how to start watching your favorite movies & tv shows starting now!</p>
+            </div><br>
+            <div class="icon_box">
+                <i class="fa-solid fa-right-to-bracket" style="font-size: 60px; color: #FC997C;margin-top: 19px;"></i><br>
+                <h2 style="font-family: 'Lato', sans-serif">Register</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos at harum, saepe suscipit asperiores?</p>
+            </div>
+            <div class="icon_box">
+                <i class="fa-brands fa-buffer" style="font-size: 60px; color: #FC997C;margin-top: 19px"></i><br>
+                <h2 style="font-family: 'Lato', sans-serif">Choose a Plan</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt quisquam, placeat itaque iusto eos!</p>
+            </div>
+            <div class="icon_box">
+                <i class="fa-solid fa-face-smile" style="font-size: 60px; color: #FC997C;margin-top: 19px;"></i><br>
+                <h2 style="font-family: 'Lato', sans-serif;">Enjoy Moviies</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tenetur, quae perspiciatis nulla aliquid odit.</p>
+            </div>
+        </div>
+        <br><br><br>
+        <section id="rand">
+            <div class="cols_2 features__left">
+                
+            </div>
+            <div class="cols_2 features__right">
+                <h1 style="font-family: 'Lato',sans-serif;font-size: 30px;">Watch all Movies & TV Shows once they get released!</h1>
+                <br><br>
+                <p style="font-family: 'Lato',sans-serif; margin-bottom: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam deserunt quaerat? Doloremque expedita repellendus adipisci eligendi nobis illum! Perferendis ab blanditiis eius iste incidunt esse numquam asperiores hic suscipit.</p>
+                <a href="#" id="informatik">More Informations</a>
+            </div>
+        </section>
+        <br>
+        <div class="plans">
+            <div id="title_1">
+                <h2>Become a Premium Member</h2>
+            </div>
+        </div><br><br>
+        <section id="plants">
+            <div id="plants_1">
+                <h2 style="font-family: 'Lato',sans-serif;">Free</h2><br>
+                <h3 style="font-family: 'Lato',sans-serif;">$0/Month</h3><br>
+                <ul class="plants1_ul">
+                    <li>HD available</li>
+                    <li>Unlimited Movies and TV shows</li>
+                    <li>Watch on your phone & tablet</li>
+                    <li>Download and watch offline</li>
+                    <li>Screens you can watch</li>
+                    <li>First Month Free</li>
+                </ul><br>
+                <button type="submit" id="buton">Choose Plan</button>
+            </div>
+            <div id="plants_2">
+                <h2 style="padding:10px;color:#FC997C;background-color:white;border-radius: 4px;">Recommended</h2><br>
+                <h2 style="font-family: 'Lato',sans-serif;">
+                    Basic
+                </h2><br>
+                <h3 style="font-family: 'Lato',sans-serif;">
+                    $9.99/Month
+                </h3><br>
+                <ul class="plants2_ul">
+                    <li>HD available</li>
+                    <li>Unlimited Movies and TV shows</li>
+                    <li>Watch on your phone & tablet</li>
+                    <li>Download and watch offline</li>
+                    <li>Screens you can watch</li>
+                    <li>First Month Free</li>
+                </ul><br>
+                <button type="submit" id="buton">Choose Plan</button>
+            </div>
+            <div id="plants_3">
+                <h2 style="font-family: 'Lato',sans-serif;">
+                    Premium
+                </h2><br>
+                <h3 style="font-family: 'Lato',sans-serif;">
+                    $19.00/Month
+                </h3><br>
+                <ul class="plants3_ul">
+                    <li>HD available</li>
+                    <li>Unlimited Movies and TV shows</li>
+                    <li>Watch on your phone & tablet</li>
+                    <li>Download and watch offline</li>
+                    <li>Screens you can watch</li>
+                    <li>First Month Free</li>
+                </ul><br>
+                <button type="submit" id="buton">Choose Plan</button>
+            </div>
+        </section>
+        <br>
+        <div style="clear: both;"></div>
+        <br><br>
+        <div id="stick">
+            <a href="#"><i class="fa-solid fa-circle-arrow-up" ></i></a>
+        </div>
+        <br>
+        <div id="categories">
+            <section class="cat_1">
+                <div id="colon_3">
+                    <span>974</span>
+                    <h4>Movies</h4>
+                </div>
+                <div id="colon_3">
+                    <span>456</span>
+                    <h4>TV Shows</h4>
+                </div>
+                <div id="colon_3">
+                    <span>1024</span>
+                    <h4>Users</h4>
+                </div><br>
+            </section>
+        </div><br><br>
+        <div id="movies">
+            <h2 translate="no" style="text-align: center;">Latest Movies & TV Shows</h2><br><br>
+            <div id="plants">
+                <div id="row">
+                    <div class="cart_1">
+                        <img src="https://www.impdb.org/images/1/18/TFCover.jpg" alt="#" id="img_cart_1"><br>
+                        <br>
+                        <h2>Transformers</h2><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quis facilis, ad laudantium hic distinctio!</p>
+                        <button type="submit" id="buton">Watch</button><br>
+                    </div>
+                    <div class="cart_2">
+                        <img src="../brrr/poster-3.jpeg" alt="#" id="img_cart_1"><br>
+                        <br>
+                        <h2>The Mummy</h2><br>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa natus quo quaerat! Ex, porro voluptas!</p>
+                        <button type="submit" id="buton">Watch</button><br>
+                    </div>
+                    <div class="cart_3">
+                        <img src="https://www.impdb.org/images/thumb/f/ff/1917_poster.jpg/378px-1917_poster.jpg"alt="" id="img_cart_1"><br>
+                        <br>
+                        <h2>1917</h2><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quam autem doloremque in culpa fuga?</p>
+                        <button type="submit" id="buton">Watch</button><br>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div><br>
+    </main>
+    <footer>
+        <div id="lin">
+            <a href="#" class="linko">About</a>
+            <a href="#" class="linko">Blog</a>
+            <a href="#" class="linko">Forum</a>
+            <a href="#" class="linko">Contact</a>
+                <div id="icon_pack">
+                    <a href="#" id="icon_pack_1" style="color:rgb(188, 42, 141)"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#" id="icon_pack_1" style="color:royalblue"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" id="icon_pack_1" style="color:royalblue"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
